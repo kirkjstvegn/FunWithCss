@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dots Menu</title>
+		<details>https://www.youtube.com/watch?v=5OLDpdqdyWE&list=PLlzR2cpMWAV0XJgBBu0VDHo2eOosaot-u&index=6</details>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<details>Icons from https://ionic.io/ionicons/usage</details>
+	</head>
+	<body>
+		<div class="navigation">
+			<span style="--i:0; --x:-1; --y:0" ><ion-icon name="camera-outline"></ion-icon></span>	
+			<span style="--i:1; --x:1;  --y:0" ><ion-icon name="bag-outline"></ion-icon></span>	
+			<span style="--i:2; --x:0;  --y:-1"><ion-icon name="chatbubbles-outline"></ion-icon></span>	
+			<span style="--i:3; --x:0;  --y:1" ><ion-icon name="alarm-outline"></ion-icon></span>	
+			<span style="--i:4; --x:1;  --y:1" ><ion-icon name="game-controller-outline"></ion-icon></span>	
+			<span style="--i:5; --x:-1; --y:-1"><ion-icon name="calendar-number-outline"></ion-icon></span>	
+			<span style="--i:6; --x:0;  --y:0" ><ion-icon name="cloud-download-outline"></ion-icon></span>	
+			<span style="--i:7; --x:-1; --y:1" ><ion-icon name="home-outline"></ion-icon></span>	
+			<span style="--i:8; --x:1;  --y:-1"><ion-icon name="mail-open-outline"></ion-icon></span>	
+		</div>
+
+		<script>
+			let navigation = document.querySelector('.navigation');
+			navigation.onclick = function() {
+				navigation.classList.toggle('active')
+			}
+		</script>
+
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	</body>
+</html>
