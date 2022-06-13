@@ -1,0 +1,74 @@
+:root {
+	--clr-bg: #1d2b3a;
+	--clr-ln: #00dfc4;
+	--clr-fnt: rgba(255, 255, 255, 0.25);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	gap: 30px;
+	background-color: var(--clr-bg);
+}
+
+.inputBox {
+	position: relative;
+	width: 250px;
+}
+
+.inputBox input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid var(--clr-fnt);
+	background-color: var(--clr-bg);
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+	font-size: 1em;
+	transition: 0.5s;
+} 
+
+.inputBox span {
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: var(--clr-fnt);
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+	color: #00dfc4;
+	transform: translateX(10px) translateY(-7px);
+	font-size: 0.65em;
+	padding: 0 10px;
+	background-color: var(--clr-bg);
+	border-left: 1px solid var(--clr-ln);
+	border-right: 1px solid var(--clr-ln);
+	letter-spacing: 0.2em;
+}
+
+.inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span {
+	background-color: var(--clr-ln);
+	color: var(--clr-bg);
+	border-radius: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+	border: 1px solid #00dfc4;
+
+}
