@@ -1,12 +1,15 @@
+:root {
+	--clr-bg: #000;
+}
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #000;
+	background-color: var(--clr-bg);
 }
 
 section {
 	height: 100vh;
-	background-color: #000;
+	background-color: var(--clr-bg);
 }
 
 section::before {

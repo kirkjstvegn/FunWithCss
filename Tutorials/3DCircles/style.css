@@ -1,15 +1,15 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 :root {
 	--clr-bg: #785dff;
 	--clr-bg2: #0081e8;
 	--clr-bd:hsl(0, 0%, 100%);
 	--clr-bs1:hsl(0, 0%, 100%);
 	--clr-bs2:hsl(0, 0%, 25%)
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {

@@ -1,11 +1,12 @@
+:root {
+	--bg: #042104;
+	--cir: #00ff0a;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-:root {
-	--bg: #042104;
-	--cir: #00ff0a;
 }
 
 section {
@@ -13,7 +14,7 @@ section {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: var(--bg);
+	background-color: var(--bg);
 	animation: animateCircleColor 8s linear infinite;
 }
 

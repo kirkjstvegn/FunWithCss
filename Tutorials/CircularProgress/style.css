@@ -1,13 +1,13 @@
+:root {
+	--bg: #222;
+	--cbg: #2a2a2a;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
-}
-
-:root {
-	--bg: #222;
-	--cbg: #2a2a2a;
 }
 
 body {
@@ -143,6 +143,6 @@ body {
 	font-size: .75em;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	color: rgba(255, 255,255, 0.75);
+	color: rgba(255, 255, 255, 0.75);
 
 }

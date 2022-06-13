@@ -16,7 +16,7 @@ body {
 	position: relative;
 	width: 70px;
 	height: 70px;
-	background: #212532;
+	background-color: #212532;
 	border-radius: 10px;
 	cursor: pointer;
 	display: flex;
@@ -39,7 +39,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #fff;
+	background-color: #fff;
 	border-radius: 50%;
 	transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
 	transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
@@ -49,7 +49,7 @@ body {
 .navigation.active span {
 	width: 45px;
 	height: 45px;
-	background: #333849;
+	background-color: #333849;
 	transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
 }
 

@@ -1,12 +1,12 @@
+:root {
+	--clr-bg: #27282c;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
-}
-
-:root {
-	--bg: #27282c;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: var(--bg);
+	background-color: var(--clr-bg);
 }
 
 a {
@@ -42,7 +42,7 @@ a::before {
 	content: '';
 	position: absolute;
 	inset: 2px;
-	background-color: var(--bg);
+	background-color: var(--clr-bg);
 }
 
 a span {
@@ -64,7 +64,7 @@ a i::before {
 	width: 10px;
 	height: 5px;
 	border: 2px solid var(--clr);
-	background-color: var(--bg);
+	background-color: var(--clr-bg);
 	transform: translateX(-50%);
 	transition: 0.5s;
 }
@@ -82,7 +82,7 @@ a i::after {
 	width: 10px;
 	height: 5px;
 	border: 2px solid var(--clr);
-	background-color: var(--bg);
+	background-color: var(--clr-bg);
 	transition: 0.5s;
 }
 

@@ -1,3 +1,11 @@
+:root {
+	--clr-bs-blk: rgba(0, 0, 0, 0.25);
+	--clr-bs-blk2: rgba(0, 0, 0, 0.5);
+	--clr-bs-blk3: rgba(0, 0, 0, 0.75);
+	--clr-bs-wht: rgba(255, 255, 255, 0.2);
+	--clr-bg: #2f363e;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -10,19 +18,19 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: #2f363e;
+	background-color: var(--clr-bg);
 }
 
 .container {
 	position: relative;
 	width: 350px;
 	min-height: 260px;
-	background: #2f363e;
-	box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
-	10px 10px 70px rgba(0,0,0,0.25),
-	inset 5px 5px 10px rgba(0,0,0,0.25),
-	inset 5px 5px 20px rgba(255,255,255,0.2),
-	inset -5px -5px 15px rgba(0,0,0,0.75);
+	background-color: var(--clr-bg);
+	box-shadow: 25px 25px 75px var(--clr-bs-blk),
+	10px 10px 70px var(--clr-bs-blk),
+	inset 5px 5px 10px var(--clr-bs-blk),
+	inset 5px 5px 20px var(--clr-bs-wht),
+	inset -5px -5px 15px var(--clr-bs-blk3);
 }
 
 .container h3 {
@@ -47,11 +55,11 @@ body {
 	left: 0;
 	width: 45px;
 	height: 45px;
-	background: #1f83f2;
+	background-color: #1f83f2;
 	border-radius: 22.5px; /* Half of width*/
-	box-shadow: 5px 5px 7px rgba(0,0,0,0.25), 
-	inset 2px 2px 5px rgba(255,255,255,0.25),
-	inset -3px -3px 5px rgba(0,0,0,0.5);
+	box-shadow: 5px 5px 7px var(--clr-bs-blk), 
+	inset 2px 2px 5px var(--clr-bs-wht),
+	inset -3px -3px 5px var(--clr-bs-blk2);
 	transition: 0.5s;
 }
 
@@ -75,7 +83,7 @@ body {
 	position: absolute;
 	width: 30px;
 	height: 30px;
-	background: #2f363e;
+	background-color: var(--clr-bg);
 	border-radius: 30px;
 	transform: scale(0);
 	transition: 0.5s;
