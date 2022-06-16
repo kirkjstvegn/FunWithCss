@@ -3,10 +3,7 @@ body {
 }
 .container {
 	display: grid;
-	place-items: left;
-	grid-template-columns: 90% 10%;
-	margin-right: 0;
-	gap: 0;
+	grid-template-columns: auto 180px;
 }
 
 iframe {
