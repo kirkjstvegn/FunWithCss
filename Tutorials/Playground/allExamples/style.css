@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+}
+.container {
+	display: grid;
+	place-items: left;
+	grid-template-columns: 90% 10%;
+	margin-right: 0;
+	gap: 0;
+}
+
+iframe {
+	width: 90%; 
+	height: 96vh;
+	border-width: 0;
+	margin: 0;
+}
+
+.frame {
+	margin-right: 0;
+	padding-right: 0;
+	width: 90%;
+	height: 100vh;
+
+}
+
+.lists {
+	margin: 0;
+	padding: 0;
+}
