@@ -1,9 +1,17 @@
+:root {
+	--clr-bg: #dfe2e7;
+	--clr-fg: #0a14a7;
+	--clr-fg-fade: rgba(10, 20, 167, 0.5);
+}
 body {
-	margin: 0;
+	margin: 0px;
+	background-color: var(--clr-bg);
+
 }
 .container {
-	display: grid;
-	grid-template-columns: auto 180px;
+	display: flex;
+	justify-items: left;
+	align-items: left;
 }
 
 iframe {
@@ -13,15 +21,46 @@ iframe {
 	margin: 0;
 }
 
-.frame {
-	margin-right: 0;
-	padding-right: 0;
-	width: 90%;
-	height: 100vh;
+.lists {
+	margin-left: 15px;
+	padding: 0;
+	display: grid;
+	place-items: left;
 
 }
 
-.lists {
+.lists span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
 	margin: 0;
 	padding: 0;
+	border: 2px solid var(--clr-fg);
+	font-size: 2rem;
+	color: var(--clr-fg);
+}
+
+.lists ul {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.lists ul li {
+	position: relative;
+	list-style: none;
+}
+
+.lists ul li a {
+	position: relative;
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: var(--clr-fg-fade);
+	transition: color 300ms;
+}
+
+.lists ul li a:hover {
+	color: var(--clr-fg);
 }
