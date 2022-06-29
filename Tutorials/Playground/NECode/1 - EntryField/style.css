@@ -1,0 +1,22 @@
+:root {
+	--clr-bg: #1d2b3a;
+	--clr-ln: #00dfc4;
+	--clr-fnt: rgba(255, 255, 255, 0.25);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	gap: 30px;
+	background-color: var(--clr-bg);
+}
+
