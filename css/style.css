@@ -100,6 +100,10 @@ video {
 	grid-column-end: 1;
 }
 
+.instructor .image img{
+	border-radius: 50%;
+}
+
 .instructor .instructor-text {
 	color: var(--clr-title);
 	grid-column-start: 2;
@@ -117,12 +121,6 @@ video {
 }
 
 footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	opacity: 0;
-	animation: animateFooter 2s linear forwards;
-	animation-delay: 12s;
 }
 
 @keyframes animateFooter {
@@ -137,13 +135,23 @@ footer {
 	}
 }
 
-footer ul {
+footer .links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	animation: animateFooter 2s linear forwards;
+	animation-delay: 12s;
+
+}
+
+footer .links ul {
 	position: relative;
 	display: flex;
 	gap: 50px;
 }
 
-footer ul li {
+footer .links ul li {
 	position: relative;
 	list-style: none;
 	width: 320px;
@@ -155,12 +163,12 @@ footer ul li {
 	transition: 500ms;
 }
 
-footer ul li:hover {
+footer .links ul li:hover {
 	z-index: 10000;
 	transform: scale(0.75);
 }
 
-footer ul li::before {
+footer .links ul li::before {
 	content: '';
 	position: absolute;
 	inset: 30px;
@@ -171,18 +179,18 @@ footer ul li::before {
 	transition: 500ms;
 }
 
-footer ul li:hover::before {
+footer .links ul li:hover::before {
 	inset: 0px;
 }
 
-footer ul li::after {
+footer .links ul li::after {
 	content: '';
 	position: absolute;
 	inset: 0;
 	background-color: var(--clr-bg);
 }
 
-footer ul li a {
+footer .links ul li a {
 	position: relative;
 	padding: 0 1rem;
 	text-decoration: none;
@@ -195,7 +203,24 @@ footer ul li a {
 	transition: 0.5s;
 }
 
-footer ul li:hover a {
+footer .links ul li:hover a {
 	font-size: 2.5em;
 	filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+footer .other-links {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1em;
+	color: var(--clr-bg);
+	gap: 50px;
+}
+
+footer .other-links a {
+	font-size: 1em;
+	color: var(--clr-title);
+	filter: brightness(.2);
+	gap: 50px;
 }

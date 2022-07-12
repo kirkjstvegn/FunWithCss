@@ -1,0 +1,147 @@
+:root {
+	--clr-bg: #000;
+	--clr-fg: #fff;
+	--clr-title: #d7edff;
+	--clr-title2: orange;
+}
+
+body {
+	background-color: var(--clr-bg);
+	color: var(--clr-fg);
+}
+
+.header {
+	display: flex;
+	justify-content: left;
+	align-items: left;
+}
+
+.header h1 {
+	font-size: 3.5em;
+	margin: 0;
+	padding: 1rem 2rem;
+	width: 100%;
+	color: var(--clr-title);
+}
+
+.section-body {
+	padding-left: 3em;
+	padding-bottom: 2em;
+}
+
+.section-body .item {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	padding-bottom: 2em;
+	padding-top: 1em;
+}
+
+.section-body .item::before {
+	content: '';
+	border-top: 4px solid;
+	border-color: var(--clr-title);
+	animation: animateItemBorder 20s forwards infinite;
+}
+
+@keyframes animateItemBorder {
+	0% {
+		border-color: var(--clr-title);
+		box-shadow: 0 0;
+	}
+
+	25% {
+		border-color: var(--clr-title);
+		box-shadow: 0 0;
+	}
+
+	50% {
+		border-color: var(--clr-title2);
+		box-shadow: 6px 4px 8px;
+	}
+
+	75% {
+		border-color: var(--clr-title);
+		box-shadow: 0 0;
+	}
+
+	100% {
+		border-color: var(--clr-title);
+		box-shadow: 0 0;
+	}
+
+}
+
+.section-body .item p {
+	font-size: 2rem;
+	margin: 0;
+}
+
+.section-body .sub-item {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.section-body .sub-item p{
+	padding-left: 5rem;
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+.section-body .sub-item-notes {
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+}
+
+.section-body .sub-item-notes p{
+	padding-left: 10rem;
+	font-size: 1rem;
+	margin: 0;
+}
+
+footer {
+	padding: 1rem 2rem;
+	width: 350px;
+	border: 1px solid;
+	border-radius: 15px;
+	border-color: var(--clr-title);
+	animation: animateItemBorder 20s forwards infinite;
+}
+
+footer .instructor {
+	display: flex;
+	justify-content: left;
+	align-items: left;
+	gap: 1em;
+}
+
+footer .instructor .image {
+	width: 125px;
+}
+
+footer .instructor .image img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+footer .instructor .instructor-text {
+	color: var(--clr-title);
+}
+
+footer .instructor .instructor-text .instructor-name {
+	font-size: 1.5em;
+	filter: brightness(0.85);
+}
+
+footer .instructor .instructor-text .instructor-name h2{
+	padding: 0;
+	margin: 0;
+}
+
+footer .instructor .instructor-text .instructor-title {
+	font-size: 1em;
+	filter: brightness(0.75);
+}
