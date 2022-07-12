@@ -120,7 +120,14 @@ video {
 	filter: brightness(0.75);
 }
 
-footer {
+footer .links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	animation: animateFooter 2s linear forwards;
+	animation-delay: 12s;
+
 }
 
 @keyframes animateFooter {
@@ -133,16 +140,6 @@ footer {
 		opacity: 1;
 		filter: blur(0);
 	}
-}
-
-footer .links {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	opacity: 0;
-	animation: animateFooter 2s linear forwards;
-	animation-delay: 12s;
-
 }
 
 footer .links ul {
